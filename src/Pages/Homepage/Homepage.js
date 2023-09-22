@@ -1,12 +1,18 @@
 import React from 'react';
 import '../../Css/Homepage.css';
-
+import homephoto from '../../images/homephoto.png'
 const HomePage = () => {
   return (
     <div className="home-page">
-    <header className="header">
-      <h1>Welcome to Our Online Store</h1>
-      <p>Discover the Best Deals</p>
+    <header style={{color:'black',paddingLeft:'50px',display:'flex',justifyContent:'space-around', backgroundColor:'#E8EBF2'}}>
+      <div style={{display:'flex',flexDirection:'column',justifyContent:'center',textAlign:'left'}}>
+      <h1 style={{fontWeight:'bold', fontSize:'32px'}}>Welcome to Our Online Store</h1>
+      
+      <p>Discover the Best Deals bla bla bla</p>
+      </div>
+      <div>
+        <img src={homephoto}></img>
+      </div>
     </header>
     <section className="featured-products">
       <h2>Featured Products</h2>

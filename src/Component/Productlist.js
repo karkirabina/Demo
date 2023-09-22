@@ -23,16 +23,19 @@ function ProductList() {
 
   return (
     <div>
-      <h1>Product List</h1>
-      <div className="grid grid-cols-4">
+      <br></br>
+      <h1 style={{fontSize:'24px', fontWeight:'bold'}}>Product List</h1>
+      <br></br>
+      <div className="grid grid-cols-4 gap-y-10 gap-x-10 mx-8 ">
         {products?.map((p, index) => (
-          <div key={p.id} style={{ border: "0px solid #000" }}>
+          <div key={p.id} style={{display:"flex",paddingTop:"20px",paddingBottom:'20px',flexDirection:"column",borderRadius:'12px',borderColor:"#d3d3d3",alignItems:'center', border: "1px solid #000" }}>
             <h3>{p.name}</h3>
             {/* <p>Description: {p.description}</p> */}
-            <p>Price: ${p.price}</p>
+            <p style={{textAlign:'center'}}>Price: ${p.price}</p>
             <img
+
               src={p.thumbnail}
-              style={{ width: "200px", height: "200px" }}
+              style={{ width: "200px", height: "200px", }}
             />
           </div>
         ))}
