@@ -1,0 +1,47 @@
+/* Navbar.css */
+
+nav {
+  justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    align-items: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #ff5733; /* Change color on hover */
+  }
+  phone-number {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-end;
+  }
+  
+  phone-number span{
+    margin-right:5px;
+  }
+  phone-number a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
